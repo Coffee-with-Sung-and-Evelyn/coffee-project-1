@@ -29,7 +29,7 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         console.log('coffeeName:' , coffee.name);
         console.log('selectedCoffee: ', selectedCoffee);
-        if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes('light', 0) === selectedCoffee.toLowerCase().includes('light', 0)) {
+        if (coffee.roast === selectedRoast || coffee.name.toLowerCase() === selectedCoffee.toLowerCase()){
             filteredCoffees.push(coffee);
         }
     });
@@ -55,6 +55,9 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 coffees.reverse();
+var result = document.getElementById("coffees");
+console.log(result);
+ //var result = document.write("<p>Bold:" + .bold() + "</p>");
 
 var dropDown = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
