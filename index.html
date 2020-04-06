@@ -22,27 +22,28 @@
 <!--&lt;!&ndash;    <input id="submit" type="submit"/>&ndash;&gt;-->
 <!--</form>-->
 <!-- Search form -->
+<form>
+    <div class="form-group">
+        <!--    <label class="" for="roast-selection">Roast</label>-->
+        <label for="roast-selection" class="font-weight-bold d-flex justify-content-end">
+            Roast
+        </label>
+        <select class="form-control col-6 d-flex justify-content-end float-right" id="roast-selection">
+            <option>all</option>
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select>
+    </div>
 
-<div class="form-group d-flex justify-content-end">
-<!--    <label class="" for="roast-selection">Roast</label>-->
-    <p class="font-weight-bold d-flex ">
-        Roast
-    </p>
-    <select class="form-control col-6" id="roast-selection">
-        <option>all</option>
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
-    </select>
-</div>
+    <div class="form-group d-flex justify-content-end">
+        <label for="inputCoffee">Coffee Name</label>
+        <input type="text" class="form-control col-6 d-flex justify-content-end float-right" id="inputCoffee" placeholder="Coffee Name">
+    </div>
+    <div class="d-flex justify-content-end ">
+        <input class="d-flex col-6 justify-content-center bg-primary text-light" id="submit" type="submit"/>
+    </div>
 
-<div class="form-group d-flex justify-content-end">
-    <label for="inputCoffee">Coffee Name</label>
-    <input type="text" class="form-control col-6" id="inputCoffee" placeholder="Coffee Name">
-</div>
-<div class="d-flex justify-content-end ">
-<input class="d-flex col-6 justify-content-center bg-primary text-light" id="submit" type="submit"/>
-</div>
 <!--<div>-->
 <!--    <div>-->
 <!--        <div>-->
@@ -56,72 +57,16 @@
 
 <div id="coffees"></div>
 
-<div id="coffeesName">
-    <div>
-        <div class="font-weight-bold">Light City</div>
-        <div class="text-black-50">light</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Half City</div>
-        <div class="text-black-50">light</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Cinnamon</div>
-        <div class="text-black-50">light</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">City</div>
-        <div class="text-black-50">medium</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">American</div>
-        <div class="text-black-50">medium</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Breakfast</div>
-        <div class="text-black-50">medium</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">High</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Continental</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">New Orleans</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">European</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Espresso</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Viennese</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">Italian</div>
-        <div class="text-black-50">dark</div>
-    </div>
-    <div>
-        <div class="font-weight-bold">French</div>
-        <div class="text-black-50">dark</div>
-    </div>
-</div>
-
-<!-- <p class="font-weight-bold">Bold text.</p> -->
-
+</form>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
 <script src="main.js"></script>
 
 </body>
