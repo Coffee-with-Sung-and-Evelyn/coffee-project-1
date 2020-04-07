@@ -66,5 +66,6 @@ var roastSelection = document.querySelector('#roast-selection');
 var inputCoffee = document.querySelector('#inputCoffee');
 
 dropDown.innerHTML = renderCoffees(coffees);
-
+// roastSelection.addEventListener('click', updateCoffees)
 submitButton.addEventListener('click', updateCoffees);
+dropDown.addEventListener('click', updateCoffees);
