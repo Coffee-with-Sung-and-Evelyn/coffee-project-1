@@ -4,9 +4,10 @@
 //  Add functionality to search through the coffees by name, and display only the coffees that match the provided search term (You will need to add an input field to the existing form for this)
 //  Add functionality to update the displayed coffee as the user types into the search box, or as soon as they select an option from the select.
 function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
-    //html += '<div>' + coffee.id + '</div>';
+    var html = '<div class="coffee col-6">';
+    //html += '<div class="col-3">'  + '</div>';
     html += '<div class="font-weight-bold">' + coffee.name + '</div>';
+    html += '<div class="col-3">' + '</div>';
     html += '<div class="text-black-50">' + coffee.roast + '</div>';
     html += '</div>';
 
@@ -65,5 +66,6 @@ var roastSelection = document.querySelector('#roast-selection');
 var inputCoffee = document.querySelector('#inputCoffee');
 
 dropDown.innerHTML = renderCoffees(coffees);
-
+// roastSelection.addEventListener('click', updateCoffees)
 submitButton.addEventListener('click', updateCoffees);
+dropDown.addEventListener('click', updateCoffees);

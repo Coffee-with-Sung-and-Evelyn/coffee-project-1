@@ -29,50 +29,65 @@
   </div>-->
 
 <form>
-    <div class="form-group">
-        <!--    <label class="" for="roast-selection">Roast</label>-->
-        <label for="roast-selection" class="font-weight-bold col-6 d-flex justify-content-start ml-auto p-0">
-            Roast
-        </label>
-        <select class="form-control col-6 d-flex justify-content-end float-right" id="roast-selection">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
+<!--<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
     </div>
-    <div class="form-group col-7 d-flex justify-content-center ml-auto p-0">
-        <label for="inputCoffee" class="font-weight-bold row col-6">Coffee Name</label>
-        <input type="text" class="form-control row col-7 d-flex justify-content-end p-0" id="inputCoffee"
-               placeholder="Coffee Name">
+    <div class="col">
+      2 of 2
     </div>
-    <div class="d-flex justify-content-end ">
-        <input class="d-flex col-6 justify-content-center bg-primary text-light" id="submit" type="submit"/>
-    </div>
+  </div>
+  </div>
+  -->
+    <div class="container row m-auto">
 
-    <!-- Second part -->
-    <div class="form-group col-6 d-flex justify-content-center ml-auto">
-        <label><h1>Add a Coffee</h1></label>
-    </div>
-    <div class="form-group">
-        <label for="secondSelect" class="font-weight-bold col-6 d-flex justify-content-start ml-auto p-0">
-            Roast
-        </label>
-        <select class="form-control col-6 d-flex justify-content-end float-right" id="secondSelect">
-            <option>de-caf</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-    </div>
-    <div class="form-group col-6 d-flex justify-content-end">
-        <label for="secondName">Name</label>
-        <input class="form-control" id="secondName">
-    </div>
-    <div class="d-flex justify-content-end ">
-        <input class="d-flex col-6 justify-content-center bg-primary text-light" id="secondSubmit" type="submit"/>
-    </div>
+        <div id="coffees" class="row col-6"></div>
 
+
+        <div class="container form-group col-6 mr-0">
+            <!--    <label class="" for="roast-selection">Roast</label>-->
+            <label for="roast-selection" class="font-weight-bold col d-flex justify-content-start ml-auto p-0">
+                Roast
+            </label>
+            <select class="form-control col d-flex justify-content-end float-right" id="roast-selection">
+                <option>all</option>
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+
+
+            <label for="inputCoffee" class="font-weight-bold row col">Coffee Name</label>
+            <input type="text" class="form-control row col d-flex justify-content-end p-0 m-auto" id="inputCoffee"
+                       placeholder="Coffee Name">
+            <div class="d-flex justify-content-end ">
+                <input class="d-flex col justify-content-center bg-primary text-light" id="submit" type="submit"/>
+            </div>
+
+            <!-- Second part -->
+            <div class="container form-group col d-flex justify-content-center ml-auto">
+                <label><h1>Add a Coffee</h1></label>
+            </div>
+            <div class="form-group">
+                <label for="secondSelect" class="font-weight-bold col d-flex justify-content-start ml-auto p-0">
+                    Roast
+                </label>
+                <select class="form-control col d-flex justify-content-end float-right" id="secondSelect">
+                    <option>de-caf</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+            </div>
+
+            <label for="secondName" class="font-weight-bold">Name</label>
+            <input class="form-control" id="secondName">
+            <div class="d-flex justify-content-end ">
+                <input class="d-flex col justify-content-center bg-primary text-light" id="secondSubmit" type="submit"/>
+            </div>
+        </div>
+    </div>
 <!--<div>-->
 <!--    <div>-->
 <!--        <div>-->
@@ -83,8 +98,6 @@
 <!--    </div>-->
 <!--    -->
 <!--</div>-->
-
-<div id="coffees"></div>
 
 </form>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
