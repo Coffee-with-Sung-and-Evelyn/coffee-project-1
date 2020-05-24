@@ -51,7 +51,7 @@
                 Roast
             </label>
             <select class="form-control col d-flex justify-content-end float-right" id="roast-selection">
-                <option>all</option>
+                <option id="show-all">all</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
@@ -59,7 +59,7 @@
 
 
             <label for="inputCoffee" class="font-weight-bold row col">Coffee Name</label>
-            <input type="text" class="form-control row col d-flex justify-content-end p-0 m-auto" id="inputCoffee"
+            <input type="text" class="form-control row col d-flex justify-content-end p-0 m-auto" onkeyup="myFunction()" for= "inputCoffee" id="inputCoffee"
                        placeholder="Coffee Name">
             <div class="d-flex justify-content-end ">
                 <input class="d-flex col justify-content-center bg-primary text-light" id="submit" type="submit"/>
@@ -88,16 +88,6 @@
             </div>
         </div>
     </div>
-<!--<div>-->
-<!--    <div>-->
-<!--        <div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--            <div></div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    -->
-<!--</div>-->
 
 </form>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
