@@ -42,6 +42,13 @@ function myFunction() {
 
 }
 
+function secondSubmitButton (e) {
+    e.preventDefault();
+    coffees.push({name: inputSecond.value , roast: secondSelect.value});
+    updateCoffees(e);
+    this.form.reset();
+}
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -67,9 +74,15 @@ var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var inputCoffee = document.querySelector('#inputCoffee');
 
+var inputSecond = document.querySelector('#secondName');
+var secondSelect = document.querySelector('#secondSelect');
+var secondSubmit = document.querySelector('#secondSubmit');
+
 dropDown.innerHTML = renderCoffees(coffees);
 // roastSelection.addEventListener('click', updateCoffees)
 submitButton.addEventListener('click', updateCoffees);
 dropDown.addEventListener('click', updateCoffees);
 // todo Made change to dropOptions will updateCoffees menu
 roastSelection.addEventListener('change', updateCoffees);
+
+secondSubmit.addEventListener('click',secondSubmitButton);
