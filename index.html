@@ -9,7 +9,8 @@
 
 </head>
 <body>
-<h1 class="d-flex justify-content-center">Coffee!</h1>
+<!--<div style="background-image: url('https://i.pinimg.com/originals/e8/07/57/e807579edb93300913645941f251c97d.jpg');">-->
+<h1 class="d-flex justify-content-center" style="color:whitesmoke;">Coffee!</h1>
 <hr>
 <!--<form>-->
 <!--    <label for="roast-selection">Roast</label>-->
@@ -29,17 +30,6 @@
   </div>-->
 
 <form>
-<!--<div class="container">
-  <div class="row">
-    <div class="col">
-      1 of 2
-    </div>
-    <div class="col">
-      2 of 2
-    </div>
-  </div>
-  </div>
-  -->
     <div class="container row m-auto">
 
         <div id="coffees" class="row col-6"></div>
@@ -47,7 +37,7 @@
 
         <div class="container form-group col-6 mr-0">
             <!--    <label class="" for="roast-selection">Roast</label>-->
-            <label for="roast-selection" class="font-weight-bold col d-flex justify-content-start ml-auto p-0">
+            <label for="roast-selection" class="font-weight-bold col d-flex justify-content-start ml-auto p-0" style="color:whitesmoke;">
                 Roast
             </label>
             <select class="form-control col d-flex justify-content-end float-right" id="roast-selection">
@@ -56,9 +46,9 @@
                 <option>medium</option>
                 <option>dark</option>
             </select>
-
-
-            <label for="inputCoffee" class="font-weight-bold row col">Coffee Name</label>
+            <label for="inputCoffee" class="font-weight-bold row col" style="color:whitesmoke;">
+                Coffee Name
+            </label>
             <input type="text" class="form-control row col d-flex justify-content-end p-0 m-auto" onkeyup="myFunction()" for= "inputCoffee" id="inputCoffee"
                        placeholder="Coffee Name">
             <div class="d-flex justify-content-end ">
@@ -67,10 +57,12 @@
 
             <!-- Second part -->
             <div class="container form-group col d-flex justify-content-center ml-auto">
-                <label><h1>Add a Coffee</h1></label>
+                <label><h1 style="color:whitesmoke;">
+                    Add a Coffee
+                </h1></label>
             </div>
             <div class="form-group">
-                <label for="secondSelect" class="font-weight-bold col d-flex justify-content-start ml-auto p-0">
+                <label for="secondSelect" class="font-weight-bold col d-flex justify-content-start ml-auto p-0" style="color:whitesmoke;">
                     Roast
                 </label>
                 <select class="form-control col d-flex justify-content-end float-right" id="secondSelect">
@@ -80,8 +72,9 @@
                     <option>dark</option>
                 </select>
             </div>
-
-            <label for="secondName" class="font-weight-bold">Name</label>
+            <label for="secondName" class="font-weight-bold" style="color:whitesmoke;">
+                Name
+            </label>
             <input class="form-control" id="secondName">
             <div class="d-flex justify-content-end ">
                 <input class="d-flex col justify-content-center bg-primary text-light" id="secondSubmit" type="submit"/>

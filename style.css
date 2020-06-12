@@ -7,3 +7,9 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+
+body {
+    background-image: url('https://i.pinimg.com/originals/e8/07/57/e807579edb93300913645941f251c97d.jpg');
+    background-size: cover;
+}
